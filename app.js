@@ -1,21 +1,20 @@
 
 
-const startGrid = (columns, rows) => {
+const startGrid = (cells) => {
   let body = document.querySelector('body');
-  let newRow = document.createElement('div');
-
-  body.appendChild(newRow);
-
-  let id = 0
-
-  for (let i = 0; i < columns; i++) {
-    let newDiv = document.createElement('div');  
-    newDiv = `newDiv${id}`;
-    newRow.appendChild(`newDiv${id}`);
-    id += 1;
-  }
+  let grid = document.createElement('div');
+  let cell = document.createElement('div');
   
+
+  body.appendChild(grid);
+  grid.appendChild(cell);
+
+  for (let i = 0; i <= cells; i++) {
+      let newCell = document.createElement('div');  
+      newCell.class = `newCell${i}`;
+      grid.appendChild(newCell);
   }
+}
 
 
-startGrid(16, 0);
+startGrid(256);
