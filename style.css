@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+  height: 700px;
+  width: 100%;
+  grid-template-rows: repeat(128, .78125%);
+  grid-template-columns: repeat(128, .78125%);
+  z-index: 0;
+}
+
+.unit {
+  border: solid 1px rgba(0, 0, 0, .1);
+  height: 93%;
+  width: 90%;
+  display: inline-block;
+}
+
+.body {
+  background-image: url('/images/etch-a-sketch.jpg');
+}
+
+.button {
+  padding: 10px;
+}
