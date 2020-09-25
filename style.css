@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  height: 700px;
+  height: 600px;
   width: 100%;
   grid-template-rows: repeat(128, .78125%);
   grid-template-columns: repeat(128, .78125%);
@@ -14,9 +14,7 @@
   display: inline-block;
 }
 
-.body {
-  background-image: url('/images/etch-a-sketch.jpg');
-}
+
 
 .button {
   padding: 10px;
