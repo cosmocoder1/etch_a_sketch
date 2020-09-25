@@ -88,26 +88,31 @@ const runGame = () => {
 
   let header = document.createElement('div');
   let button = document.createElement('button');
+  let logo = document.createElement('div');
   let button2 = document.createElement('button');
   let body = document.querySelector('body');
 
   header.classList.add('header');
   header.style.background = 'rgba(240, 0, 0, .9)';
-  header.style.height = '3em';
+  header.style.height = '4em';
   
-  button.style.margin = '12px';
+  button.style.margin = '20px';
   button.style.fontFamily = 'Baloo Tammudu 2';
   button.innerHTML = 'Clear';
   button.classList.add('button');
 
+  logo.classList.add('logo');
+
   button2.classList.add('button2');
   button2.classList.add('button');
-  button2.innerHTML = 'fruity pebbles';
+  button2.innerHTML = 'Fruity Pebbles mode';
+  button2.style.margin = '20px';
   button2.style.fontFamily = 'Baloo Tammudu 2';
 
 
   body.appendChild(header);
   header.appendChild(button);
+  header.appendChild(logo);
   header.appendChild(button2);
   
 
